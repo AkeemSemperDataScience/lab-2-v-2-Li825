@@ -1,7 +1,16 @@
+import pytest
 def lab2Question1(word):
     # Note - you'll need to change the signature (above) to match the arguments for this lab...
     # Create a function that takes in a string 
     # Return True if that string is a palindrome, False otherwise
+    lab1=True
+    i=0
+    j=len(word)-1
+    while i< (len(word)/2) :
+        if word[i] != word[j-i]:
+            lab1=False
+            break
+    return lab1
     pass
 
 def lab2Question2(number_val):
@@ -45,4 +54,6 @@ def isValidPassword(password):
     # - Contains at least one lowercase letter
     # - Contains at least one number
     pass
+
+
 
